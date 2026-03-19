@@ -1,0 +1,930 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": false,
+        "page_width": "lg"
+      }
+    },
+    "73adeb6e-c32d-4bb0-abc9-b8d202a43bee": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--16748705841384__73adeb6e-c32d-4bb0-abc9-b8d202a43bee-heading-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "{{ page.title }}",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--16748705841384__73adeb6e-c32d-4bb0-abc9-b8d202a43bee-heading-1"
+      ],
+      "settings": {
+        "image_size": "auto",
+        "image": "shopify://shop_images/111324-holiday-gift-guide-lockup-hero-dt.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": false,
+        "remove_vertical_spacing": true,
+        "content_width": "sm",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "b68f4120-e5fd-4103-875c-84f7da9480a5": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16783006138600__b68f4120-e5fd-4103-875c-84f7da9480a5-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "THE GEAR WE CAN'T LIVE WITHOUT",
+            "heading_tag": "h1"
+          }
+        },
+        "template--16783006138600__b68f4120-e5fd-4103-875c-84f7da9480a5-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We checked in with the team here at TSG for their no-brainer ideas for gear and goods they can't live without.  So here it is, straight from the experts in finding gear for guys who have everything.</p>"
+          }
+        },
+        "subheading_GjfCqi": {
+          "type": "subheading",
+          "settings": {
+            "text": "Scroll down and see what we're wearing or buying ourselves."
+          }
+        }
+      },
+      "block_order": [
+        "template--16783006138600__b68f4120-e5fd-4103-875c-84f7da9480a5-heading-1",
+        "template--16783006138600__b68f4120-e5fd-4103-875c-84f7da9480a5-richtext-1",
+        "subheading_GjfCqi"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "content_width": "xs",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "featured_product_MpiKDE": {
+      "type": "featured-product",
+      "blocks": {
+        "vendor_y4MBC6": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title_URDTbz": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "badges_mpktBy": {
+          "type": "badges",
+          "disabled": true,
+          "settings": {}
+        },
+        "price_xcBFRA": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating_thbCG8": {
+          "type": "rating",
+          "settings": {
+            "show_empty": true,
+            "rating_mode": "rating"
+          }
+        },
+        "payment_terms_tR8zAa": {
+          "type": "payment_terms",
+          "disabled": true,
+          "settings": {}
+        },
+        "separator_UDzAVn": {
+          "type": "separator",
+          "settings": {}
+        },
+        "description_JDKWFx": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "variant_picker_LWn7xC": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_type": "block",
+            "color_selector_type": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_ep9Afm": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons_8j6Wgz": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "pickup_availability_b7crP7": {
+          "type": "pickup_availability",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor_y4MBC6",
+        "title_URDTbz",
+        "badges_mpktBy",
+        "price_xcBFRA",
+        "rating_thbCG8",
+        "payment_terms_tR8zAa",
+        "separator_UDzAVn",
+        "description_JDKWFx",
+        "variant_picker_LWn7xC",
+        "quantity_selector_ep9Afm",
+        "buy_buttons_8j6Wgz",
+        "pickup_availability_b7crP7"
+      ],
+      "settings": {
+        "product": "tsg-camden-worksman-shell-whiskey",
+        "separate_section_with_border": false,
+        "container_size": "lg",
+        "product_info_size": 30,
+        "center_basic_info": false,
+        "desktop_media_layout": "carousel_dots",
+        "desktop_media_grid_gap": 20,
+        "mobile_controls": "dots",
+        "enable_media_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": false,
+        "max_image_zoom_level": 1.5,
+        "subheading": "",
+        "title": "Marc's Pick",
+        "content": "<p>Our Chief Shirt Folder's suggestion is: \"Easily one the best outerwear pieces we've designed since we started TSG. A perfect wind and rain stopping layer for cooler mornings.  Just wore one in Texas and it performed better than my shooting skills.\"</p>"
+      }
+    },
+    "featured_product_efj6mT": {
+      "type": "featured-product",
+      "blocks": {
+        "vendor_pLV9MQ": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title_V7epLB": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "badges_NFazf7": {
+          "type": "badges",
+          "disabled": true,
+          "settings": {}
+        },
+        "price_DXqL4r": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating_8QAjcf": {
+          "type": "rating",
+          "settings": {
+            "show_empty": true,
+            "rating_mode": "rating"
+          }
+        },
+        "payment_terms_7zEQQH": {
+          "type": "payment_terms",
+          "disabled": true,
+          "settings": {}
+        },
+        "separator_pmQqTN": {
+          "type": "separator",
+          "settings": {}
+        },
+        "description_Edy4BW": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "variant_picker_HRRyLB": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_type": "block",
+            "color_selector_type": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_EDYcgm": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons_xkEB3B": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "pickup_availability_Yx4nVz": {
+          "type": "pickup_availability",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor_pLV9MQ",
+        "title_V7epLB",
+        "badges_NFazf7",
+        "price_DXqL4r",
+        "rating_8QAjcf",
+        "payment_terms_7zEQQH",
+        "separator_pmQqTN",
+        "description_Edy4BW",
+        "variant_picker_HRRyLB",
+        "quantity_selector_EDYcgm",
+        "buy_buttons_xkEB3B",
+        "pickup_availability_Yx4nVz"
+      ],
+      "settings": {
+        "product": "tsg-midweight-button-down-shirt-ivory-olive-check",
+        "separate_section_with_border": false,
+        "container_size": "lg",
+        "product_info_size": 30,
+        "center_basic_info": false,
+        "desktop_media_layout": "carousel_dots",
+        "desktop_media_grid_gap": 20,
+        "mobile_controls": "dots",
+        "enable_media_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "max_image_zoom_level": 1.5,
+        "subheading": "",
+        "title": "Tyler's Pick",
+        "content": "<p>Tyler, AKA \"Meat\", our larger-than-life, former collegiate O-Line, and Ops Manager, says: \"It's tough to find a nice shirt that fits really well and our midweight shirts are great for me as a XXL and fit a slimmer guy as well.\"</p>"
+      }
+    },
+    "featured_product_XgPyUL": {
+      "type": "featured-product",
+      "blocks": {
+        "vendor_QwwhEd": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title_hg4kFt": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "badges_zLewCR": {
+          "type": "badges",
+          "disabled": true,
+          "settings": {}
+        },
+        "price_A4p44g": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating_UiVTX4": {
+          "type": "rating",
+          "settings": {
+            "show_empty": true,
+            "rating_mode": "rating"
+          }
+        },
+        "payment_terms_MxcF6r": {
+          "type": "payment_terms",
+          "disabled": true,
+          "settings": {}
+        },
+        "separator_xX6KVh": {
+          "type": "separator",
+          "settings": {}
+        },
+        "description_TFJpmg": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "variant_picker_ArdWWA": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_type": "block",
+            "color_selector_type": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_acmWFW": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_d9RhBh": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "pickup_availability_QkGmqw": {
+          "type": "pickup_availability",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor_QwwhEd",
+        "title_hg4kFt",
+        "badges_zLewCR",
+        "price_A4p44g",
+        "rating_UiVTX4",
+        "payment_terms_MxcF6r",
+        "separator_xX6KVh",
+        "description_TFJpmg",
+        "variant_picker_ArdWWA",
+        "quantity_selector_acmWFW",
+        "buy_buttons_d9RhBh",
+        "pickup_availability_QkGmqw"
+      ],
+      "settings": {
+        "product": "tsg-cottonwood-cord-shirt-cedar",
+        "separate_section_with_border": false,
+        "container_size": "lg",
+        "product_info_size": 30,
+        "center_basic_info": false,
+        "desktop_media_layout": "carousel_dots",
+        "desktop_media_grid_gap": 20,
+        "mobile_controls": "dots",
+        "enable_media_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": false,
+        "max_image_zoom_level": 1.5,
+        "subheading": "",
+        "title": "LINDSAY's Pick",
+        "content": "<p>Our ever-capable and super patient Head of Production, Lindsay, says her favorite item is: \"Something different for us but has been one of my favorite's since joining the team at TSG.  We love the colors and the weight and fit of the shirt is perfect to compliment our other shirts and vests.  A home run by the team here.\"</p>"
+      }
+    },
+    "featured_product_TV8hgq": {
+      "type": "featured-product",
+      "blocks": {
+        "vendor_H6nhAw": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title_8k4Gcp": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "badges_GDinEQ": {
+          "type": "badges",
+          "disabled": true,
+          "settings": {}
+        },
+        "price_xyfMUJ": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating_Mx9EmY": {
+          "type": "rating",
+          "settings": {
+            "show_empty": true,
+            "rating_mode": "rating"
+          }
+        },
+        "payment_terms_cbPDD4": {
+          "type": "payment_terms",
+          "disabled": true,
+          "settings": {}
+        },
+        "separator_pFXDaL": {
+          "type": "separator",
+          "settings": {}
+        },
+        "description_fCRtpk": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "variant_picker_FgjyLt": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_type": "block",
+            "color_selector_type": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_UGqMhi": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons_Qy9ARG": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "pickup_availability_yTixEw": {
+          "type": "pickup_availability",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor_H6nhAw",
+        "title_8k4Gcp",
+        "badges_GDinEQ",
+        "price_xyfMUJ",
+        "rating_Mx9EmY",
+        "payment_terms_cbPDD4",
+        "separator_pFXDaL",
+        "description_fCRtpk",
+        "variant_picker_FgjyLt",
+        "quantity_selector_UGqMhi",
+        "buy_buttons_Qy9ARG",
+        "pickup_availability_yTixEw"
+      ],
+      "settings": {
+        "product": "tsg-drift-polo-estate",
+        "separate_section_with_border": false,
+        "container_size": "lg",
+        "product_info_size": 30,
+        "center_basic_info": false,
+        "desktop_media_layout": "carousel_dots",
+        "desktop_media_grid_gap": 30,
+        "mobile_controls": "dots",
+        "enable_media_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": false,
+        "max_image_zoom_level": 3,
+        "subheading": "",
+        "title": "BG's PICK",
+        "content": "<p>The life of the TSG party, our design and production assistant BG is all in on the Drift Polo.  Read why she has one proud papa: \"Got one for my pops, who is arguably not a dresser, and he's obsessed with it.  Calls it his \"fancy polo\".  He looks great and it fits him perfectly.\"</p>"
+      }
+    },
+    "featured_product_3kfLzG": {
+      "type": "featured-product",
+      "blocks": {
+        "vendor_NR7zTi": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title_gXm9N8": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "badges_rMhdyy": {
+          "type": "badges",
+          "disabled": true,
+          "settings": {}
+        },
+        "price_L3EfmV": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating_NRj6xg": {
+          "type": "rating",
+          "settings": {
+            "show_empty": true,
+            "rating_mode": "rating"
+          }
+        },
+        "payment_terms_cQTgdt": {
+          "type": "payment_terms",
+          "disabled": true,
+          "settings": {}
+        },
+        "separator_fBkXnD": {
+          "type": "separator",
+          "settings": {}
+        },
+        "description_ixEzr8": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "variant_picker_kPkNHx": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_type": "block",
+            "color_selector_type": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_CbiXiK": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons_VzcpB8": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "pickup_availability_4g3ex9": {
+          "type": "pickup_availability",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor_NR7zTi",
+        "title_gXm9N8",
+        "badges_rMhdyy",
+        "price_L3EfmV",
+        "rating_NRj6xg",
+        "payment_terms_cQTgdt",
+        "separator_fBkXnD",
+        "description_ixEzr8",
+        "variant_picker_kPkNHx",
+        "quantity_selector_CbiXiK",
+        "buy_buttons_VzcpB8",
+        "pickup_availability_4g3ex9"
+      ],
+      "settings": {
+        "product": "tsg-boone-5-pocket-pant-field-khaki",
+        "separate_section_with_border": false,
+        "container_size": "lg",
+        "product_info_size": 30,
+        "center_basic_info": false,
+        "desktop_media_layout": "carousel_dots",
+        "desktop_media_grid_gap": 30,
+        "mobile_controls": "dots",
+        "enable_media_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": false,
+        "max_image_zoom_level": 3,
+        "subheading": "",
+        "title": "Jackson's Pick",
+        "content": "<p>Our resident \"Youth\" and assistant shopkeeper, Jackson is picky and yet we find him constantly bragging about how much he loves: \"The Boone Pants are my favorite thing we make.  I have almost all of the colors but we sell them pretty quickly so I'm waiting on a restock so I can get the other colors too.\"  </p><p></p><p>Coming from him, trust us, that's the best review something we make will ever get.</p>"
+      }
+    },
+    "collection_list_yeYtxF": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_DrQ44c": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/120324-holiday-squares_0000_Boone-TSG-Builder-23-0397.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "THOMAS FIELD FLANNEL",
+            "button_text": "",
+            "button_link": "shopify://products/tsg-thomas-flannel-field-shirt-wheat",
+            "text_color": "#282e29",
+            "overlay_color": "#000000",
+            "overlay_opacity": 5,
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "collection_WWE6gn": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/120324-holiday-squares_0005_LBUILDER-TSG-240916-092.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "CAMDEN WORKMANS SHELL",
+            "button_text": "",
+            "button_link": "shopify://products/tsg-camden-worksman-shell-midnight",
+            "text_color": "#282e29",
+            "overlay_color": "#000000",
+            "overlay_opacity": 5,
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "collection_q4GGUp": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/120324-holiday-squares_0008_LBUILDER-TSG-240916-012.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "MIDLAND TWILL PANT",
+            "button_text": "",
+            "button_link": "shopify://products/tsg-midland-twill-pant-field-khaki",
+            "text_color": "#282e29",
+            "overlay_color": "#000000",
+            "overlay_opacity": 5,
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_DrQ44c",
+        "collection_WWE6gn",
+        "collection_q4GGUp"
+      ],
+      "disabled": true,
+      "settings": {
+        "separate_section_with_border": true,
+        "image_size": "auto",
+        "show_text_outside": true,
+        "space_items": false,
+        "stack_collections": true,
+        "collections_per_row_desktop": 3,
+        "subheading": "",
+        "title": "MIXING IS MATCHING.",
+        "content": "<p>Making picking out \"outfits\" easier for you, and most importantly, for him.</p>",
+        "circle_button_background": "#ffffff",
+        "circle_button_text_color": "#1c1c1c"
+      }
+    },
+    "collection_list_FhczPK": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_PwkBVN": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/120324-holiday-squares_0011__A7R4078.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "HIGHLAND QUILTED JACKET",
+            "button_text": "",
+            "button_link": "shopify://products/tsg-highland-quilted-jacket-sienna",
+            "text_color": "#282e29",
+            "overlay_color": "#000000",
+            "overlay_opacity": 5,
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "collection_LnTUNe": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/120324-holiday-squares_0007_LBUILDER-TSG-240916-030.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "TANNER BAMBOO BUTTON DOWN",
+            "button_text": "",
+            "button_link": "shopify://products/tsg-tanner-bamboo-button-down-bridgewater-plaid",
+            "text_color": "#282e29",
+            "overlay_color": "#000000",
+            "overlay_opacity": 5,
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "collection_GY79cV": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/120324-holiday-squares_0006_LBUILDER-TSG-240916-061.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "FRASER CASHMERE 1/2-ZIP",
+            "button_text": "",
+            "button_link": "shopify://products/tsg-fraser-cashmere-sweater-medium-grey",
+            "text_color": "#282e29",
+            "overlay_color": "#000000",
+            "overlay_opacity": 5,
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_PwkBVN",
+        "collection_LnTUNe",
+        "collection_GY79cV"
+      ],
+      "disabled": true,
+      "settings": {
+        "separate_section_with_border": false,
+        "image_size": "auto",
+        "show_text_outside": true,
+        "space_items": false,
+        "stack_collections": true,
+        "collections_per_row_desktop": 3,
+        "subheading": "",
+        "title": "OR...",
+        "content": "",
+        "circle_button_background": "#ffffff",
+        "circle_button_text_color": "#1c1c1c"
+      }
+    },
+    "collection_list_mBaBnz": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_A4w7Vd": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/120324-holiday-squares_0003_LBUILDER-TSG-240916-265_f450dfc5-9448-4f0b-aa59-76bb2d25ef03.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "CAMDEN WORKMANS SHELL",
+            "button_text": "",
+            "button_link": "shopify://products/tsg-camden-worksman-shell-whiskey",
+            "text_color": "#282e29",
+            "overlay_color": "#000000",
+            "overlay_opacity": 5,
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "collection_K7EiAz": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/120324-holiday-squares_0002_Boone-TSG-Builder-23-0139.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "MIDWEIGHT BUTTON DOWN",
+            "button_text": "",
+            "button_link": "shopify://products/tsg-midweight-button-down-shirt-rwb-tattersall",
+            "text_color": "#282e29",
+            "overlay_color": "#000000",
+            "overlay_opacity": 5,
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "collection_xFacRA": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/120324-holiday-squares_0001_Boone-TSG-Builder-23-0309.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-center text-center",
+            "subheading": "",
+            "title": "BOONE 5-POCKET PANTS",
+            "button_text": "",
+            "button_link": "shopify://products/tsg-boone-5-pocket-pant-field-khaki",
+            "text_color": "#282e29",
+            "overlay_color": "#000000",
+            "overlay_opacity": 5,
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_A4w7Vd",
+        "collection_K7EiAz",
+        "collection_xFacRA"
+      ],
+      "disabled": true,
+      "settings": {
+        "separate_section_with_border": false,
+        "image_size": "auto",
+        "show_text_outside": true,
+        "space_items": false,
+        "stack_collections": true,
+        "collections_per_row_desktop": 3,
+        "subheading": "",
+        "title": "OR...",
+        "content": "",
+        "circle_button_background": "#ffffff",
+        "circle_button_text_color": "#1c1c1c"
+      }
+    },
+    "featured_collections_EJbhpb": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_BWKqbq": {
+          "type": "collection",
+          "settings": {
+            "collection": "tsg-apparel",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "Shop The Whole Collection"
+          }
+        }
+      },
+      "block_order": [
+        "collection_BWKqbq"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "Here's The Whole Enchilada FROM YOURS TRULY..."
+      }
+    },
+    "b6c6ebb6-5a91-42d4-9521-8029bfeb083e": {
+      "type": "newsletter",
+      "settings": {
+        "separate_section_with_border": true,
+        "image_size": "sm",
+        "image": "shopify://shop_images/042122_learntofish_hero-dt.jpg",
+        "mobile_image": "shopify://shop_images/baeronwaxedjacketoxbowf23_0001_tsg-ducks-240114-048.jpg",
+        "subheading": "WANT TO STAY IN THE LOOP?",
+        "title": "SIGN UP FOR OUR TSG DISPATCHES",
+        "content": "",
+        "button_text": "Subscribe Now",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#202531",
+        "overlay_color": "#282e29",
+        "overlay_opacity": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "73adeb6e-c32d-4bb0-abc9-b8d202a43bee",
+    "b68f4120-e5fd-4103-875c-84f7da9480a5",
+    "featured_product_MpiKDE",
+    "featured_product_efj6mT",
+    "featured_product_XgPyUL",
+    "featured_product_TV8hgq",
+    "featured_product_3kfLzG",
+    "collection_list_yeYtxF",
+    "collection_list_FhczPK",
+    "collection_list_mBaBnz",
+    "featured_collections_EJbhpb",
+    "b6c6ebb6-5a91-42d4-9521-8029bfeb083e"
+  ]
+}

@@ -1,0 +1,189 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": false,
+        "page_width": "lg"
+      }
+    },
+    "b68f4120-e5fd-4103-875c-84f7da9480a5": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16783006138600__b68f4120-e5fd-4103-875c-84f7da9480a5-subheading-1": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Coming October 2025"
+          }
+        },
+        "template--16783006138600__b68f4120-e5fd-4103-875c-84f7da9480a5-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "A GENTry SHORT: BLUE RIDGE RISING",
+            "heading_tag": "h1"
+          }
+        },
+        "template--16783006138600__b68f4120-e5fd-4103-875c-84f7da9480a5-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Hurricane Helene left its mark on the mountains, rivers, and people of western North Carolina. Yet from the wreckage came resilience—neighbors helping neighbors, guides supporting one another, and communities determined to rise again. Our new film is dedicated to these unsung heroes, whose grit and grace turned tragedy into triumph. May their story inspire us all to see that even when waters rise, the human spirit rises higher.  </p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16783006138600__b68f4120-e5fd-4103-875c-84f7da9480a5-subheading-1",
+        "template--16783006138600__b68f4120-e5fd-4103-875c-84f7da9480a5-heading-1",
+        "template--16783006138600__b68f4120-e5fd-4103-875c-84f7da9480a5-richtext-1"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "video_TJT7kg": {
+      "type": "video",
+      "blocks": {
+        "play_MyfaHY": {
+          "type": "play",
+          "settings": {
+            "icon_color": "#ffffff"
+          }
+        },
+        "heading_7yHDpG": {
+          "type": "heading",
+          "settings": {
+            "text": "Video",
+            "heading_tag": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "play_MyfaHY",
+        "heading_7yHDpG"
+      ],
+      "settings": {
+        "autoplay": false,
+        "show_controls": true,
+        "video_size": "md",
+        "external_video_url": "https://youtu.be/HlW57vD218w?si=DjBy99MDeVCXD3GF",
+        "poster": "shopify://shop_images/092725-blue-ridge-rising-hero-dt.jpg",
+        "text_color": "#ffffff"
+      }
+    },
+    "custom_liquid_jwjEge": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom_liquid.presets.custom_liquid.name",
+      "settings": {
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<p>\n</p>",
+        "text_alignment": "center"
+      }
+    },
+    "73adeb6e-c32d-4bb0-abc9-b8d202a43bee": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--16748705841384__73adeb6e-c32d-4bb0-abc9-b8d202a43bee-heading-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "{{ page.title }}",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--16748705841384__73adeb6e-c32d-4bb0-abc9-b8d202a43bee-heading-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_size": "auto",
+        "image": "shopify://shop_images/092725-blue-ridge-rising-hero-dt_434c677d-82c2-4f29-879c-7af380362f8a.jpg",
+        "mobile_image": "shopify://shop_images/092525-pocket-pool-trailer-email_02.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": false,
+        "remove_vertical_spacing": true,
+        "content_width": "sm",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "recently_viewed_products_TGx8b9": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_count": 9,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "",
+        "title": "Recently viewed products",
+        "content": ""
+      }
+    },
+    "81ebf8c2-e4f6-4b71-a97a-2eb64cb9de34": {
+      "type": "blog-posts",
+      "settings": {
+        "separate_section_with_border": true,
+        "blog": "dispatches",
+        "posts_count": 3,
+        "stack_on_mobile": false,
+        "show_category": true,
+        "show_excerpt": true,
+        "show_read_more": true,
+        "subheading": "",
+        "title": "READ UP, GET EXCITED",
+        "content": "",
+        "button_link": "",
+        "button_text": "View all"
+      }
+    },
+    "b6c6ebb6-5a91-42d4-9521-8029bfeb083e": {
+      "type": "newsletter",
+      "settings": {
+        "separate_section_with_border": true,
+        "image_size": "sm",
+        "image": "shopify://shop_images/042122_learntofish_hero-dt.jpg",
+        "subheading": "WANT TO STAY IN THE LOOP?",
+        "title": "SIGN UP FOR OUR TSG DISPATCHES",
+        "content": "",
+        "button_text": "Subscribe Now",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#202531",
+        "overlay_color": "#000000",
+        "overlay_opacity": 50
+      }
+    }
+  },
+  "order": [
+    "main",
+    "b68f4120-e5fd-4103-875c-84f7da9480a5",
+    "video_TJT7kg",
+    "custom_liquid_jwjEge",
+    "73adeb6e-c32d-4bb0-abc9-b8d202a43bee",
+    "recently_viewed_products_TGx8b9",
+    "81ebf8c2-e4f6-4b71-a97a-2eb64cb9de34",
+    "b6c6ebb6-5a91-42d4-9521-8029bfeb083e"
+  ]
+}

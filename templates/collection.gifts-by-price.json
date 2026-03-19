@@ -1,0 +1,122 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-banner": {
+      "type": "collection-banner",
+      "custom_css": [
+        ".content-over-media > picture img {height: unset; min-height: unset;}",
+        ".content-over-media--lg {--content-over-media-height: unset;}"
+      ],
+      "settings": {
+        "content_width": "md",
+        "image_size": "xs",
+        "allow_transparent_header": false,
+        "reveal": false,
+        "enable_parallax": false,
+        "show_collection_title": false,
+        "show_collection_description": true,
+        "show_breadcrumb": true,
+        "breadcrumb_color": "#282e29",
+        "breadcrumb_text_color": "#ffffff",
+        "background": "#282e29",
+        "text_color": "#ffffff",
+        "overlay_color": "#282e29",
+        "overlay_opacity": 100
+      }
+    },
+    "rich_text_WeBEeq": {
+      "type": "rich-text",
+      "blocks": {
+        "button_BmfUrL": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "Back To Gift Guide",
+            "url": "shopify://collections/holiday-best-sellers",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_BmfUrL"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "custom_css": [
+        ".dot-checkbox {border-radius: 0px; height: 0.75rem; width: 0.75rem; inset-block-start: calc(0.35rem + 1px); background: #f79e1b; border: 2px solid;}"
+      ],
+      "settings": {
+        "hide_product_information": false,
+        "show_variant_swatches": false,
+        "products_per_page": 40,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": false,
+        "horizontal_spacing_factor": 0.3,
+        "vertical_spacing_factor": 0.5,
+        "filter_layout": "sidebar",
+        "quick_links_menu": "",
+        "show_sort_by": false,
+        "show_filters": true,
+        "show_results_count": false,
+        "show_filter_group_name": true,
+        "show_empty_filter_values": false,
+        "show_filter_values_count": true,
+        "show_color_swatch": true,
+        "open_filters_by_default": false,
+        "promotion_placement_order": "random",
+        "custom_promotion_placement_order": 4,
+        "promotion_image_url": "shopify://shop_images/100825-collection-page-usp-promo.jpg",
+        "enable_promotion_link": true,
+        "promotion_link_url": ""
+      }
+    },
+    "newsletter_igGzqj": {
+      "type": "newsletter",
+      "custom_css": [
+        "input::placeholder {color: #ffff; font-weight: bold;}",
+        ".button:hover {background-color: #cf7900;}",
+        ".form-control {max-height: 30px;}"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "image_size": "auto",
+        "image": "shopify://shop_images/042122_learntofish_hero-dt.jpg",
+        "mobile_image": "shopify://shop_images/070824-summer-fishing-mobile-hero_1a5cd972-7ffc-4f70-ab3c-1cf95358475e.jpg",
+        "subheading": "Want to stay in the loop?",
+        "title": "Sign Up for our TSG Dispatches",
+        "content": "",
+        "button_text": "Subscribe",
+        "text_color": "#ffffff",
+        "button_background": "",
+        "button_text_color": "",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    }
+  },
+  "order": [
+    "collection-banner",
+    "rich_text_WeBEeq",
+    "main",
+    "newsletter_igGzqj"
+  ],
+  "wrapper": ".boost-sd__product-filter-fallback"
+}

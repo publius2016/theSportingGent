@@ -1,0 +1,474 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": false,
+        "page_width": "lg"
+      }
+    },
+    "slideshow_rL8YMj": {
+      "type": "slideshow",
+      "blocks": {
+        "image_HAmQiM": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/082525-LDW-Sale-collection-hero-DT_971d2147-98e3-4243-8c58-f5bf61ac6a55.jpg",
+            "mobile_image": "shopify://shop_images/082525-LDW-Sale-ad-feed-v2.jpg",
+            "subheading": "",
+            "title": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center-end sm:text-end",
+            "content_max_width": 780,
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_HAmQiM"
+      ],
+      "custom_css": [
+        ".h1 {text-shadow: #000 1px 0 40px;}",
+        ".h6 {text-shadow: #000 1px 0 20px;}",
+        "@media only screen and (min-width: 1000px) {.h1 {font-size: 48px; } .h6 {font-size: 24px; } .prose:not(.prose--tight) :is(.button, .button-group:has(.button)) {margin-block-start: 1rem; }}",
+        ".content-over-media > picture img {height: unset; min-height: unset;}",
+        ".content-over-media--lg {--content-over-media-height: unset;}"
+      ],
+      "settings": {
+        "allow_transparent_header": false,
+        "show_next_section_button": false,
+        "media_size": "auto",
+        "autoplay": false,
+        "autoplay_pause_on_video": false,
+        "cycle_speed": 5,
+        "background": "#000000",
+        "controls_color": "#ffffff"
+      }
+    },
+    "rich_text_mpbJeB": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_3xgCW7": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_wq77n6": {
+          "type": "heading",
+          "settings": {
+            "text": "IT'll FEEL GOOD TO GET HIGH(ER)",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_pjDaQH": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Some head east, some head west.  In either direction, we have got you covered - especially those of you choosing to chase adventure in the hills and breathe in the complete-lack-of humidity at higher altitudes.  It's hard to beat.  Check out the line up of goods & gear to set yourself for the most-relaxing Summahhh yet.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_3xgCW7",
+        "heading_wq77n6",
+        "richtext_pjDaQH"
+      ],
+      "disabled": true,
+      "settings": {
+        "separate_section_with_border": false,
+        "content_width": "md",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "rich_text_F8Pcdg": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_PmfUmT": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "SAVE UP TO 60% OFF | GREAT GEAR AT CRAZY DEALS"
+          }
+        },
+        "heading_AkBMyg": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "SEASON'S END MARKDOWNS",
+            "heading_tag": "h1"
+          }
+        },
+        "heading_Na8HpX": {
+          "type": "heading",
+          "settings": {
+            "text": "SAVE AT LEAST 30% OFF",
+            "heading_tag": "h2"
+          }
+        },
+        "subheading_pYn4jK": {
+          "type": "subheading",
+          "settings": {
+            "text": "NO CODE NECESSARY - DISCOUNT APPLIED AUTOMATICALLY AT CHECKOUT"
+          }
+        },
+        "richtext_hmJh3z": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We don't run many sales, but when we do we <em>do not</em> mess around.  Amassed below you'll find goods and gear ready at prices you <em>cannot</em> pass up.  From outerwear, vests, shorts, polos, pants, and gear, you have less excuses here than you do to go visit a certain relative by marriage. </p><p>  Again, what's the excuse??</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_PmfUmT",
+        "heading_AkBMyg",
+        "heading_Na8HpX",
+        "subheading_pYn4jK",
+        "richtext_hmJh3z"
+      ],
+      "settings": {
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "featured_collections_eNdJpR": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_zG4i7a": {
+          "type": "collection",
+          "settings": {
+            "collection": "labor-day-weekend-markdowns",
+            "products_count": 50,
+            "title": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_zG4i7a"
+      ],
+      "custom_css": [
+        ".h2 {display: none;}"
+      ],
+      "name": "LDW Collection",
+      "settings": {
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "horizontal_spacing_factor": 0.3,
+        "vertical_spacing_factor": 1,
+        "subheading": ""
+      }
+    },
+    "collection_list_y7iqCk": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_7aMiY6": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/TSG_menspolo_tealcaststripecopy.png",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "TOPPER POLOS",
+            "button_text": "",
+            "button_link": "shopify://products/tsg-topper-polo-teal-cast-stripe",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "collection_87jfG6": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/main1000x_0001_TSG_Clubshort_bonecopy.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "BOONE SHORTS",
+            "button_text": "",
+            "button_link": "shopify://products/copy-of-tsg-club-short-stone",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "collection_mHXifP": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/tsghatteraspantmain1000x_0000s_0000_TSG_hatteraspant_charcoal_frontcopy2khaki_089f919f-9a0e-466c-922b-52b7e5e88be6.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "",
+            "title": "HATTERAS PANTS",
+            "button_text": "",
+            "button_link": "shopify://products/tsg-hatteras-performance-pant-khaki",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_7aMiY6",
+        "collection_87jfG6",
+        "collection_mHXifP"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "separate_section_with_border": true,
+        "image_size": "auto",
+        "show_text_outside": false,
+        "space_items": true,
+        "stack_collections": true,
+        "collections_per_row_desktop": 3,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "circle_button_background": "#ffffff",
+        "circle_button_text_color": "#1c1c1c"
+      }
+    },
+    "b68f4120-e5fd-4103-875c-84f7da9480a5": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16783006138600__b68f4120-e5fd-4103-875c-84f7da9480a5-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "The best summertime shirt we have.",
+            "heading_tag": "h1"
+          }
+        },
+        "template--16783006138600__b68f4120-e5fd-4103-875c-84f7da9480a5-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Some do it right, and some do it better, and that's where the Airetex™ bamboo fabric comes into play.  The team at TSG Apparel Co. worked with an STeP™ certified facility to create a blend of lightweight, quick drying and anti-microbial fabric as the first and most important part of the puzzle during the design and production of the collection of Airetex™ goods.  So whether your next adventure is in the stream or the field, or just taking your ol' lady to a nice steak dinner, you'll be good to go - even if your overcooked steak isn't.</p>"
+          }
+        },
+        "button_6FPewP": {
+          "type": "button",
+          "settings": {
+            "style": "solid",
+            "text": "SEE MORE",
+            "url": "shopify://collections/airetex-bamboo-apparel-collection",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "image_cBGEmc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/021224-Brooks-SS-hero-DT-v2.jpg",
+            "width_mode": "full_width",
+            "max_width": 1000,
+            "mobile_max_width": 600
+          }
+        }
+      },
+      "block_order": [
+        "template--16783006138600__b68f4120-e5fd-4103-875c-84f7da9480a5-heading-1",
+        "template--16783006138600__b68f4120-e5fd-4103-875c-84f7da9480a5-richtext-1",
+        "button_6FPewP",
+        "image_cBGEmc"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".constrained-image {padding-top: 2rem;}"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "content_width": "lg",
+        "text_position": "start",
+        "remove_vertical_spacing": false
+      }
+    },
+    "featured_collections_xCLLxj": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_jbkRGJ": {
+          "type": "collection",
+          "settings": {
+            "collection": "airetex-bamboo-apparel-collection",
+            "products_count": 20,
+            "title": "",
+            "link_url": "shopify://collections/airetex-bamboo-apparel-collection",
+            "link_text": "See the Whole Enchilada"
+          }
+        }
+      },
+      "block_order": [
+        "collection_jbkRGJ"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".h2 {font-size: large;}"
+      ],
+      "settings": {
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 0.5,
+        "vertical_spacing_factor": 0.5,
+        "subheading": ""
+      }
+    },
+    "rich_text_mKXXTd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_W3h964": {
+          "type": "heading",
+          "settings": {
+            "text": "OR SHOP THE WAREHOUSE SALE STOCK",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_L9tkAh": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>No discount code needed here either, folks.  Shop the <em>crazy </em>prices and deals and speak-now-or-forever-hold-your-peace because once they are gone, they are gone.  No mo'.  Done-zo.  Never more.</p>"
+          }
+        },
+        "button_ntiw84": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "style": "solid",
+            "text": "SHOP NOW",
+            "url": "shopify://collections/tsg-apparel",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "image_87jewQ": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/s23-topper-polos-_2333x780_1883da6c-c3b1-4a36-9d3c-ab2bcde27980.jpg",
+            "width_mode": "full_width",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        }
+      },
+      "block_order": [
+        "heading_W3h964",
+        "richtext_L9tkAh",
+        "button_ntiw84",
+        "image_87jewQ"
+      ],
+      "custom_css": [
+        ".constrained-image {padding-top: 2rem;}"
+      ],
+      "settings": {
+        "separate_section_with_border": false,
+        "content_width": "lg",
+        "text_position": "start",
+        "remove_vertical_spacing": false
+      }
+    },
+    "featured_collections_EJbhpb": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_BWKqbq": {
+          "type": "collection",
+          "settings": {
+            "collection": "warehouse-collection-tsg-apparel-co",
+            "products_count": 8,
+            "title": "",
+            "link_url": "shopify://collections/warehouse-collection-tsg-apparel-co",
+            "link_text": "See More"
+          }
+        }
+      },
+      "block_order": [
+        "collection_BWKqbq"
+      ],
+      "custom_css": [
+        ".h2 {display: none;}"
+      ],
+      "settings": {
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": ""
+      }
+    },
+    "b6c6ebb6-5a91-42d4-9521-8029bfeb083e": {
+      "type": "newsletter",
+      "settings": {
+        "separate_section_with_border": true,
+        "image_size": "sm",
+        "image": "shopify://shop_images/042122_learntofish_hero-dt.jpg",
+        "mobile_image": "shopify://shop_images/baeronwaxedjacketoxbowf23_0001_tsg-ducks-240114-048.jpg",
+        "subheading": "WANT TO STAY IN THE LOOP?",
+        "title": "SIGN UP FOR OUR TSG DISPATCHES",
+        "content": "",
+        "button_text": "Subscribe Now",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#202531",
+        "overlay_color": "#282e29",
+        "overlay_opacity": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_rL8YMj",
+    "rich_text_mpbJeB",
+    "rich_text_F8Pcdg",
+    "featured_collections_eNdJpR",
+    "collection_list_y7iqCk",
+    "b68f4120-e5fd-4103-875c-84f7da9480a5",
+    "featured_collections_xCLLxj",
+    "rich_text_mKXXTd",
+    "featured_collections_EJbhpb",
+    "b6c6ebb6-5a91-42d4-9521-8029bfeb083e"
+  ]
+}

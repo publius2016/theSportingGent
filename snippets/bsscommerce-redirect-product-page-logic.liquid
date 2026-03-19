@@ -1,0 +1,21 @@
+{% assign bss_product_is_hide = false %}
+{% assign bss_hide_product_redirect_page = "/" %}
+{% assign bss_hide_product_redirect_type = 0 %}
+{% assign bss_hide_product_on_pages = "" %}
+{% assign bss_login_to_day_date = 'now' | date: '%s' %}
+{% assign bss_product_collection = "" | split: ',' %}
+{% for collection in product.collections %}
+    {%- comment %}<locksmith:325c>{% endcomment -%}
+      {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: collection, subject_parent: product, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+    {%- comment %}</locksmith:325c>{% endcomment -%}
+    {% assign collection_id = collection.id | split:',' %}
+    {% assign delimeter = "|" | split:',' %}
+    {% assign bss_product_collection = bss_product_collection | concat:delimeter %}
+    {% assign bss_product_collection = bss_product_collection | concat:collection_id %}
+{% endfor %}
+{% unless request.design_mode or request.visual_preview_mode %}
+    
+{% endunless %}
+{% if bss_product_is_hide == true or bss_product_is_hide contains "true" %}
+    {{ bss_hide_product_redirect_page }}
+{% endif %}

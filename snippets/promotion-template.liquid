@@ -1,0 +1,25 @@
+{% if section.settings.promotion_image_url %}
+  <product-card class="product-card" reveal-on-scroll="true" style="opacity: 1; transform: translateY(0px);">
+    <div class="product-card__figure">
+      <a
+        {% if section.settings.promotion_link_url %}
+          href="{{ section.settings.promotion_link_url }}"
+        {% endif %}
+        class="product-card__media"
+        data-instant=""
+      >
+        {{-
+          section.settings.promotion_image_url
+          | image_url: width: product.featured_media.width
+          | image_tag: loading: 'lazy', alt: product.featured_media.alt
+        -}}
+      </a>
+    </div>
+  </product-card>
+{% else %}
+  <div style="display: flex; justify-content: center; background:pink; align-items:center; height: 100%;">
+    <div style="width: 100%; max-width: {{ section.settings.content_width }}px; padding: 40px; text-align: center; text-transform:uppercase; ">
+      <h3>Set Promotion Image</h3></h3>
+    </div>
+  </div>
+{% endif %}

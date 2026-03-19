@@ -1,0 +1,400 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": false,
+        "page_width": "lg"
+      }
+    },
+    "73adeb6e-c32d-4bb0-abc9-b8d202a43bee": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "97f75e78-3ca2-4d22-8506-03516785baf2": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<h1 style=\"font-size:5vw;\">OXBOW™ CAMO</h1>"
+          }
+        }
+      },
+      "block_order": [
+        "97f75e78-3ca2-4d22-8506-03516785baf2"
+      ],
+      "settings": {
+        "image_size": "xs",
+        "image": "shopify://shop_images/L1009258.jpg",
+        "mobile_image": "shopify://shop_images/L1009286.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": false,
+        "remove_vertical_spacing": true,
+        "content_width": "sm",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 19
+      }
+    },
+    "8c73236e-61cc-42db-b218-c0f2fa1dfc46": {
+      "type": "rich-text",
+      "blocks": {
+        "1c10b9d4-7fb1-4d7a-b7ed-91f48ee0a2cc": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>There's no school like the old school - hence the vintage, and may-we-say bada**, Oxbow™ camo pattern we developed here at TSG.  This pattern is formulated to give you concealment in a blind, field or stream with colors that naturally appear during the best season to be outside - everyday.  So you can basically go outside and look like a bada** too.  We've said that twice now.  We're going to get in trouble soon.  Buy Oxbow™ Camo gear and be a good boy.  'Whew.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "1c10b9d4-7fb1-4d7a-b7ed-91f48ee0a2cc"
+      ],
+      "custom_css": [
+        "{background: #202530; color: white; padding: 3rem 0;}"
+      ],
+      "settings": {
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "start",
+        "remove_vertical_spacing": true
+      }
+    },
+    "1fdb73fb-ca48-4fad-9c96-a7ffe1384177": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16760249843944__1fdb73fb-ca48-4fad-9c96-a7ffe1384177-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "oxbow-goods-collection",
+            "products_count": 12,
+            "title": "The OXBOW™ CAMO LINEUP",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        }
+      },
+      "block_order": [
+        "template--16760249843944__1fdb73fb-ca48-4fad-9c96-a7ffe1384177-collection-1"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": ""
+      }
+    },
+    "db017f56-6fdd-4016-b53e-14e88d41ca02": {
+      "type": "media-grid",
+      "blocks": {
+        "template--16760249843944__db017f56-6fdd-4016-b53e-14e88d41ca02-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/tsg-blowingrock-builder-147.jpg",
+            "column_count": "6",
+            "row_count": 1,
+            "title": "Outerwear & Vests",
+            "heading_tag": "h2",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://collections/oxbow-camo-outerwear-vests",
+            "link_style": "link",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "button_background": "",
+            "button_text_color": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 21
+          }
+        },
+        "template--16760249843944__db017f56-6fdd-4016-b53e-14e88d41ca02-image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/JMB_3572.jpg",
+            "column_count": "6",
+            "row_count": 2,
+            "title": "Limited Edition Bottoms",
+            "heading_tag": "h4",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://collections/oxbow-camo-bottoms",
+            "link_style": "link",
+            "text_position": "place-self-end-start text-start",
+            "text_color": "#ffffff",
+            "button_background": "",
+            "button_text_color": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16760249843944__db017f56-6fdd-4016-b53e-14e88d41ca02-image-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WebImageEditoroxbowguideshirtalt1000x_0000s_0002_JPrice_TSG21_dove-9330.jpg",
+            "column_count": "6",
+            "row_count": 1,
+            "title": "Shirts & Pullovers",
+            "heading_tag": "h3",
+            "content": "",
+            "link_text": "",
+            "link_url": "shopify://collections/oxbow-camo-tops",
+            "link_style": "link",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "button_background": "",
+            "button_text_color": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "template--16760249843944__db017f56-6fdd-4016-b53e-14e88d41ca02-image-1",
+        "template--16760249843944__db017f56-6fdd-4016-b53e-14e88d41ca02-image-2",
+        "template--16760249843944__db017f56-6fdd-4016-b53e-14e88d41ca02-image-3"
+      ],
+      "settings": {
+        "separate_section_with_border": false,
+        "desktop_row_height": 290,
+        "mobile_row_height": 180,
+        "section_width": "lg",
+        "spacing": "md",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "",
+        "text_color": ""
+      }
+    },
+    "73f2e6a0-47a9-46b6-ba22-7fbeced5a800": {
+      "type": "images-with-text-scroll",
+      "blocks": {
+        "template--16760249843944__73f2e6a0-47a9-46b6-ba22-7fbeced5a800-image_with_text-1": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/f21-knightshill-lowres-149.jpg",
+            "subheading": "",
+            "title": "If you know TSG, then you better know Oxbow™.",
+            "content": "<p>A modern take on your grandpappy’s favorite duck hunter camo, with the added advantage of modern fabrics. It may be old school meets new school, but there is no denying that Oxbow™ will ensure that they never see you coming...</p><p>...Inspired by camouflage used by Marine Raiders in World War II, it did not take long for veterans and outdoors enthusiasts alike to put numerous variations of this pattern to work, everywhere from the duck blind to the dinner table.</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "solid"
+          }
+        },
+        "template--16760249843944__73f2e6a0-47a9-46b6-ba22-7fbeced5a800-image_with_text-2": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/082321_beawingman_1920x_97cd3853-3bc8-4b8b-80bd-729dd7f7bdd7.jpg",
+            "subheading": "",
+            "title": "",
+            "content": "<p>It is this quintessential image of freedom and free outdoor living that we pay homage to with our own signature pattern that will take you anywhere and everywhere...</p><p>...Not only does this disruptive pattern break up your outline in the field, it also breaks you free from the look of every other average guy. Wearing Oxbow™ conceals you on the hunt and reveals you when you are out and about. </p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "solid"
+          }
+        },
+        "template--16760249843944__73f2e6a0-47a9-46b6-ba22-7fbeced5a800-image_with_text-3": {
+          "type": "image_with_text",
+          "settings": {
+            "image": "shopify://shop_images/020322-midszn-vest-oxbow-alt-2.jpg",
+            "subheading": "",
+            "title": "",
+            "content": "<p>Here at TSG we believe that Oxbow™ is suited for both work and play, and it is a clear sign to all who see you that you are a work hard, play hard, full-fledged Sporting Gent.</p><p>Check out our full collection of Oxbow™ products <a href=\"https://www.thesportinggent.com/search?q=oxbow\"><span style=\"text-decoration:underline\">HERE</span></a>, including the limited edition <a href=\"https://www.thesportinggent.com/collections/all/products/tsg-boone-5-pocket-pant-oxbow\"><span style=\"text-decoration:underline\">Oxbow Boone 5-Pocket pants </span></a>(while they last).</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "solid"
+          }
+        }
+      },
+      "block_order": [
+        "template--16760249843944__73f2e6a0-47a9-46b6-ba22-7fbeced5a800-image_with_text-1",
+        "template--16760249843944__73f2e6a0-47a9-46b6-ba22-7fbeced5a800-image_with_text-2",
+        "template--16760249843944__73f2e6a0-47a9-46b6-ba22-7fbeced5a800-image_with_text-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "background_image": "shopify://shop_images/f21-knightshill-lowres-731.jpg",
+        "image_position": "start",
+        "text_alignment": "start",
+        "heading_tag": "h3",
+        "background": "#f5f5f5",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#1c1c1c",
+        "overlay_color": "#000000",
+        "overlay_opacity": 73
+      }
+    },
+    "081a943f-e1e6-4a88-9a30-2c5ae40c9edb": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16760249843944__081a943f-e1e6-4a88-9a30-2c5ae40c9edb-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "template--16760249843944__081a943f-e1e6-4a88-9a30-2c5ae40c9edb-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "If you know TSG, then you better know Oxbow™.",
+            "heading_tag": "h2"
+          }
+        },
+        "template--16760249843944__081a943f-e1e6-4a88-9a30-2c5ae40c9edb-richtext-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>A modern take on your grandpappy’s favorite duck hunter camo, with the added advantage of modern fabrics. It may be old school meets new school, but there is no denying that Oxbow™ will ensure that they never see you coming...</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16760249843944__081a943f-e1e6-4a88-9a30-2c5ae40c9edb-subheading-1",
+        "template--16760249843944__081a943f-e1e6-4a88-9a30-2c5ae40c9edb-heading-1",
+        "template--16760249843944__081a943f-e1e6-4a88-9a30-2c5ae40c9edb-richtext-1"
+      ],
+      "settings": {
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/tsg_midszn_hooded_jacket_oxbow_1500x_69e8a660-0a56-4afa-a395-9fc87412e2e6.png",
+        "reveal_on_scroll": false,
+        "image_position": "start",
+        "content_width": "lg",
+        "remove_vertical_spacing": false
+      }
+    },
+    "bc9638a4-87f7-4a04-8fbe-ae455599375c": {
+      "type": "image-with-text",
+      "blocks": {
+        "2b130496-ab56-4d19-af17-7ec445179042": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "b28b60c8-faae-41a6-bada-4d27740be70c": {
+          "type": "heading",
+          "settings": {
+            "text": "If you know TSG, then you better know Oxbow™.",
+            "heading_tag": "h2"
+          }
+        },
+        "d86e3352-f5a7-4709-9453-bf8e7036e63f": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>It is this quintessential image of freedom and free outdoor living that we pay homage to with our own signature pattern that will take you anywhere and everywhere...</p><p>...Not only does this disruptive pattern break up your outline in the field, it also breaks you free from the look of every other average guy. Wearing Oxbow™ conceals you on the hunt and reveals you when you are out and about. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "2b130496-ab56-4d19-af17-7ec445179042",
+        "b28b60c8-faae-41a6-bada-4d27740be70c",
+        "d86e3352-f5a7-4709-9453-bf8e7036e63f"
+      ],
+      "settings": {
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/baeron-waxed-oxbow-alt-1.jpg",
+        "reveal_on_scroll": false,
+        "image_position": "end",
+        "content_width": "lg",
+        "remove_vertical_spacing": true
+      }
+    },
+    "be556c16-0c0b-42ca-8a8a-cc456f716789": {
+      "type": "image-with-text",
+      "blocks": {
+        "b84948de-e4a3-4703-9882-78c5516b0429": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "fb925bcf-cf94-4bad-9c7b-4651715981f4": {
+          "type": "heading",
+          "settings": {
+            "text": "If you know TSG, then you better know Oxbow™.",
+            "heading_tag": "h2"
+          }
+        },
+        "39255c86-4e6f-45a3-a12b-ad523137b66b": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Here at TSG we believe that Oxbow™ is suited for both work and play, and it is a clear sign to all who see you that you are a work hard, play hard, full-fledged Sporting Gent.</p><p></p><p>Check out our full collection of Oxbow™ products <a href=\"https://www.thesportinggent.com/collections/oxbow-goods-collection\" title=\"https://www.thesportinggent.com/collections/oxbow-goods-collection\"><span style=\"text-decoration:underline\">HERE</span></a>, including the limited edition <a href=\"https://www.thesportinggent.com/products/tsg-waxed-briar-chaps-oxbow\" title=\"https://www.thesportinggent.com/products/tsg-waxed-briar-chaps-oxbow\">Oxbow™ Briar Chaps</a> (while they last).</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b84948de-e4a3-4703-9882-78c5516b0429",
+        "fb925bcf-cf94-4bad-9c7b-4651715981f4",
+        "39255c86-4e6f-45a3-a12b-ad523137b66b"
+      ],
+      "custom_css": [],
+      "settings": {
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/f23_midszn_vest_alt_1000x_0000s_0001_TSG-CHS-F230074.jpg",
+        "reveal_on_scroll": false,
+        "image_position": "start",
+        "content_width": "lg",
+        "remove_vertical_spacing": false
+      }
+    },
+    "0b4547ef-b6c9-4d3c-92d7-d2d47d133eea": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image_size": "xs",
+        "image": "shopify://shop_images/072721_tsgapparelco_hero_734680c1-e0ab-49b9-afa0-98f2af69ea29.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": false,
+        "remove_vertical_spacing": true,
+        "content_width": "md",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 18
+      }
+    },
+    "b6c6ebb6-5a91-42d4-9521-8029bfeb083e": {
+      "type": "newsletter",
+      "settings": {
+        "separate_section_with_border": true,
+        "image_size": "sm",
+        "image": "shopify://shop_images/042122_learntofish_hero-dt.jpg",
+        "subheading": "WANT TO STAY IN THE LOOP?",
+        "title": "SIGN UP FOR OUR TSG DISPATCHES",
+        "content": "",
+        "button_text": "Subscribe Now",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#202531",
+        "overlay_color": "#000000",
+        "overlay_opacity": 50
+      }
+    }
+  },
+  "order": [
+    "main",
+    "73adeb6e-c32d-4bb0-abc9-b8d202a43bee",
+    "8c73236e-61cc-42db-b218-c0f2fa1dfc46",
+    "1fdb73fb-ca48-4fad-9c96-a7ffe1384177",
+    "db017f56-6fdd-4016-b53e-14e88d41ca02",
+    "73f2e6a0-47a9-46b6-ba22-7fbeced5a800",
+    "081a943f-e1e6-4a88-9a30-2c5ae40c9edb",
+    "bc9638a4-87f7-4a04-8fbe-ae455599375c",
+    "be556c16-0c0b-42ca-8a8a-cc456f716789",
+    "0b4547ef-b6c9-4d3c-92d7-d2d47d133eea",
+    "b6c6ebb6-5a91-42d4-9521-8029bfeb083e"
+  ]
+}
