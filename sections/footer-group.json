@@ -1,1 +1,49 @@
-{"type":"footer","name":"Footer group","sections":{"footer":{"type":"footer","blocks":{"links":{"type":"links","disabled":true,"settings":{"menu":"footer-shop-online","show_menu_title":true}},"9a62da39-a2ce-45d6-9ec8-615c867ceb08":{"type":"links","settings":{"menu":"the-lifestyle","show_menu_title":true}},"655c721e-32d7-4fc0-aea0-d1419e823573":{"type":"links","settings":{"menu":"customer-service","show_menu_title":true}},"aba604b8-5a73-45fe-b5b0-d34c16392dce":{"type":"links","settings":{"menu":"my-account","show_menu_title":true}}},"block_order":["links","9a62da39-a2ce-45d6-9ec8-615c867ceb08","655c721e-32d7-4fc0-aea0-d1419e823573","aba604b8-5a73-45fe-b5b0-d34c16392dce"],"custom_css":[".footer__block-list {gap: 2rem;}","@media (max-width: 700px) {.footer__block-list {grid-template-rows: repeat(2, 1fr); grid-template-columns: repeat(2, 1fr); }}"],"settings":{"separate_section_with_border":true,"show_social_media":true,"show_payment_icons":false,"show_country_selector":false,"show_country_name":false,"show_country_flag":false,"show_locale_selector":false}}},"order":["footer"]}
+{
+  "type": "footer",
+  "name": "Footer",
+  "sections": {
+    "footer_heritage": {
+      "type": "footer-heritage",
+      "settings": {
+        "bg_color": "#fdfbf7",
+        "text_color": "#555555",
+        "accent_color": "#d48b1c",
+        "bottom_bar_bg": "#2a2a2a",
+        "bottom_bar_text": "#cccccc",
+        "heading_font": "'Oswald', sans-serif",
+        "body_font": "'Roboto', sans-serif",
+        "base_font_size": 14,
+        "newsletter_heading": "The TSG Dispatch",
+        "newsletter_subheading": "Stories, gear, and field notes sent straight to your inbox.",
+        "newsletter_heading_size": 28,
+        "email_placeholder": "Email Address",
+        "subscribe_button_text": "SUBSCRIBE",
+        "klaviyo_list_id": "",
+        "store_heading": "BRICK & MORTAR",
+        "store_name": "COLONY SHOPPING CENTER",
+        "store_address": "2848 SELWYN AVE<br>CHARLOTTE NC 28209",
+        "store_phone": "(704) 896.5600",
+        "store_email": "outfitter@thesportinggent.com",
+        "map_embed_url": "https://maps.google.com/maps?q=2848%20Selwyn%20Ave%2C%20Charlotte%2C%20NC%2028209&t=&z=15&ie=UTF8&iwloc=&output=embed",
+        "store_hours": "<p><strong>MONDAY - FRIDAY:</strong> 10AM - 6PM</p><p><strong>SATURDAY:</strong> 10AM - 4PM</p><p><strong>SUNDAY:</strong> CLOSED</p>",
+        "menu_1_heading": "THE GENTRY",
+        "menu_1": "",
+        "menu_2_heading": "CUSTOMER SERVICE",
+        "menu_2": "",
+        "menu_3_heading": "YOUR ACCOUNT",
+        "menu_3": "",
+        "nav_heading_size": 15,
+        "nav_heading_color": "#222222",
+        "nav_link_size": 14,
+        "nav_link_color": "#555555",
+        "social_facebook": "https://www.facebook.com/",
+        "social_instagram": "https://www.instagram.com/",
+        "social_twitter": "https://x.com/",
+        "copyright_text": "© 2026 THE SPORTING GENT."
+      }
+    }
+  },
+  "order": [
+    "footer_heritage"
+  ]
+}

@@ -1,0 +1,927 @@
+{% comment %}
+  Classic Heritage Footer — The Sporting Gent
+  A custom footer section with admin-configurable text, fonts, sizes, and colors.
+{% endcomment %}
+
+{% liquid
+  assign bg_color = section.settings.bg_color
+  assign text_color = section.settings.text_color
+  assign accent_color = section.settings.accent_color
+  assign heading_font = section.settings.heading_font
+  assign body_font = section.settings.body_font
+  assign base_font_size = section.settings.base_font_size
+  assign bottom_bg = section.settings.bottom_bar_bg
+  assign bottom_text = section.settings.bottom_bar_text
+  assign newsletter_heading_size = section.settings.newsletter_heading_size
+  assign nav_heading_size = section.settings.nav_heading_size
+  assign nav_heading_color = section.settings.nav_heading_color
+  assign nav_link_size = section.settings.nav_link_size
+  assign nav_link_color = section.settings.nav_link_color
+%}
+
+<footer
+  class="footer-heritage"
+  style="
+    --heritage-bg: {{ bg_color }};
+    --heritage-text: {{ text_color }};
+    --heritage-accent: {{ accent_color }};
+    --heritage-heading-font: {{ heading_font }};
+    --heritage-body-font: {{ body_font }};
+    --heritage-base-size: {{ base_font_size }}px;
+    --heritage-bottom-bg: {{ bottom_bg }};
+    --heritage-bottom-text: {{ bottom_text }};
+    --heritage-newsletter-heading-size: {{ newsletter_heading_size }}px;
+    --heritage-nav-heading-size: {{ nav_heading_size }}px;
+    --heritage-nav-heading-color: {{ nav_heading_color }};
+    --heritage-nav-link-size: {{ nav_link_size }}px;
+    --heritage-nav-link-color: {{ nav_link_color }};
+  "
+  {{ section.shopify_attributes }}
+>
+  {%- comment -%} ===== TOP BAR: Logo + Newsletter ===== {%- endcomment -%}
+  <div class="heritage-top">
+    <div class="heritage-top-inner">
+      <div class="heritage-brand">
+        {%- if section.settings.logo != blank -%}
+          <img
+            src="{{ section.settings.logo | image_url: width: 320 }}"
+            alt="{{ shop.name }}"
+            width="160"
+            height="auto"
+            loading="lazy"
+            class="heritage-logo-img"
+          >
+        {%- else -%}
+          <span class="heritage-logo-text">{{ shop.name }}</span>
+        {%- endif -%}
+      </div>
+      <div class="heritage-newsletter">
+        <div class="heritage-newsletter-text">
+          <h3 class="heritage-newsletter-heading">{{ section.settings.newsletter_heading }}</h3>
+          <p class="heritage-newsletter-sub">{{ section.settings.newsletter_subheading }}</p>
+        </div>
+        {%- comment -%} Klaviyo Newsletter Form Boilerplate {%- endcomment -%}
+        <form
+          action="https://manage.kmail-lists.com/subscriptions/subscribe"
+          method="POST"
+          class="heritage-form"
+          novalidate
+        >
+          <input type="hidden" name="g" value="{{ section.settings.klaviyo_list_id }}">
+          <input
+            type="email"
+            name="email"
+            placeholder="{{ section.settings.email_placeholder }}"
+            required
+            aria-label="{{ section.settings.email_placeholder }}"
+          >
+          <button type="submit" class="heritage-form-btn" aria-label="Subscribe">
+            {{ section.settings.subscribe_button_text }}
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  {%- comment -%} ===== MAIN GRID: Store Info + Nav Columns ===== {%- endcomment -%}
+  <div class="heritage-main">
+    <div class="heritage-main-inner">
+      <div class="heritage-grid">
+
+        {%- comment -%} Column 1: Brick & Mortar {%- endcomment -%}
+        <div class="heritage-col-store">
+          <h5 class="heritage-col-heading">{{ section.settings.store_heading }}</h5>
+
+          {%- if section.settings.map_embed_url != blank -%}
+            <div class="heritage-map">
+              <iframe
+                src="{{ section.settings.map_embed_url }}"
+                width="100%"
+                height="150"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Store location map"
+              ></iframe>
+            </div>
+          {%- endif -%}
+
+          <div class="heritage-contact">
+            {%- if section.settings.store_name != blank -%}
+              <p class="heritage-store-name">{{ section.settings.store_name }}</p>
+            {%- endif -%}
+            {%- if section.settings.store_address != blank -%}
+              <p>{{ section.settings.store_address }}</p>
+            {%- endif -%}
+            {%- if section.settings.store_phone != blank -%}
+              <p class="heritage-contact-line">
+                <strong>Phone:</strong>
+                <a href="tel:{{ section.settings.store_phone | remove: ' ' | remove: '(' | remove: ')' | remove: '.' }}">
+                  {{ section.settings.store_phone }}
+                </a>
+              </p>
+            {%- endif -%}
+            {%- if section.settings.store_email != blank -%}
+              <p class="heritage-contact-line">
+                <strong>Email:</strong>
+                <a href="mailto:{{ section.settings.store_email }}">{{ section.settings.store_email }}</a>
+              </p>
+            {%- endif -%}
+          </div>
+
+          {%- if section.settings.store_hours != blank -%}
+            <div class="heritage-hours">
+              {{ section.settings.store_hours }}
+            </div>
+          {%- endif -%}
+        </div>
+
+        {%- comment -%} Column 2: Nav Menu 1 {%- endcomment -%}
+        <div class="heritage-nav-col">
+          <h5
+            class="heritage-col-heading heritage-accordion-header"
+            onclick="this.parentElement.classList.toggle('expanded')"
+          >
+            {{ section.settings.menu_1_heading }}
+            <svg class="heritage-accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </h5>
+          <ul>
+            {%- assign menu_1 = linklists[section.settings.menu_1] -%}
+            {%- if menu_1 != blank -%}
+              {%- for link in menu_1.links -%}
+                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+              {%- endfor -%}
+            {%- else -%}
+              <li><a href="#">Dispatches</a></li>
+              <li><a href="#">Custom Outfitting</a></li>
+              <li><a href="#">Brick & Mortar</a></li>
+              <li><a href="#">TSG On Instagram</a></li>
+              <li><a href="#">TSG Dealers</a></li>
+              <li><a href="#">Stockist Login</a></li>
+            {%- endif -%}
+          </ul>
+        </div>
+
+        {%- comment -%} Column 3: Nav Menu 2 {%- endcomment -%}
+        <div class="heritage-nav-col">
+          <h5
+            class="heritage-col-heading heritage-accordion-header"
+            onclick="this.parentElement.classList.toggle('expanded')"
+          >
+            {{ section.settings.menu_2_heading }}
+            <svg class="heritage-accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </h5>
+          <ul>
+            {%- assign menu_2 = linklists[section.settings.menu_2] -%}
+            {%- if menu_2 != blank -%}
+              {%- for link in menu_2.links -%}
+                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+              {%- endfor -%}
+            {%- else -%}
+              <li><a href="#">Track My Order</a></li>
+              <li><a href="#">Returns & Exchanges</a></li>
+              <li><a href="#">Boring Legal Stuff</a></li>
+              <li><a href="#">Holler at Us</a></li>
+              <li><a href="#">Work at TSG</a></li>
+              <li><a href="#">Size Guide</a></li>
+              <li><a href="#">FAQ</a></li>
+            {%- endif -%}
+          </ul>
+        </div>
+
+        {%- comment -%} Column 4: Nav Menu 3 {%- endcomment -%}
+        <div class="heritage-nav-col">
+          <h5
+            class="heritage-col-heading heritage-accordion-header"
+            onclick="this.parentElement.classList.toggle('expanded')"
+          >
+            {{ section.settings.menu_3_heading }}
+            <svg class="heritage-accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </h5>
+          <ul>
+            {%- assign menu_3 = linklists[section.settings.menu_3] -%}
+            {%- if menu_3 != blank -%}
+              {%- for link in menu_3.links -%}
+                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+              {%- endfor -%}
+            {%- else -%}
+              <li><a href="#">Create an Account</a></li>
+              <li><a href="#">Log In to My Account</a></li>
+              <li><a href="#">My Orders</a></li>
+              <li><a href="#">Join The Gentry</a></li>
+            {%- endif -%}
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  {%- comment -%} ===== BOTTOM BAR: Copyright + Socials ===== {%- endcomment -%}
+  <div class="heritage-bottom">
+    <div class="heritage-bottom-inner">
+      <p class="heritage-copyright">{{ section.settings.copyright_text }}</p>
+      <div class="heritage-socials">
+        {%- if section.settings.social_facebook != blank -%}
+          <a href="{{ section.settings.social_facebook }}" aria-label="Facebook" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+        {%- endif -%}
+        {%- if section.settings.social_instagram != blank -%}
+          <a href="{{ section.settings.social_instagram }}" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+        {%- endif -%}
+        {%- if section.settings.social_twitter != blank -%}
+          <a href="{{ section.settings.social_twitter }}" aria-label="Twitter / X" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+              <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+            </svg>
+          </a>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</footer>
+
+{% stylesheet %}
+  /* =========================================
+     Classic Heritage Footer — Scoped Styles
+     ========================================= */
+
+  .footer-heritage {
+    background: var(--heritage-bg, #fdfbf7);
+    font-family: var(--heritage-body-font, 'Roboto', sans-serif);
+    font-size: var(--heritage-base-size, 14px);
+    color: var(--heritage-text, #555);
+    border-top: 1px solid #ddd;
+  }
+
+  /* --- Top Bar --- */
+  .heritage-top {
+    border-bottom: 2px solid #eaeaea;
+  }
+
+  .heritage-top-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+  }
+
+  .heritage-brand {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .heritage-logo-img {
+    width: 160px;
+    height: auto;
+    filter: grayscale(1) opacity(0.8);
+  }
+
+  .heritage-logo-text {
+    font-family: var(--heritage-heading-font, 'Oswald', sans-serif);
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--heritage-text, #222);
+  }
+
+  .heritage-newsletter {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .heritage-newsletter-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: var(--heritage-newsletter-heading-size, 28px);
+    color: #222;
+    margin: 0 0 5px;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .heritage-newsletter-sub {
+    color: #666;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    font-size: 0.95rem;
+  }
+
+  .heritage-form {
+    display: flex;
+    border: 1px solid #ccc;
+    background: #fff;
+    max-width: 400px;
+    flex-grow: 1;
+  }
+
+  .heritage-form input[type="email"] {
+    border: none;
+    padding: 12px 15px;
+    flex-grow: 1;
+    outline: none;
+    font-family: var(--heritage-body-font, 'Roboto', sans-serif);
+    background: transparent;
+    font-size: 0.9rem;
+    color: #333;
+  }
+
+  .heritage-form input[type="email"]::placeholder {
+    color: #999;
+  }
+
+  .heritage-form-btn {
+    border: none;
+    border-left: 1px solid #ccc;
+    background: #f4f4f4;
+    padding: 12px 25px;
+    font-size: 0.85rem;
+    color: #333;
+    font-family: var(--heritage-heading-font, 'Oswald', sans-serif);
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    text-transform: uppercase;
+  }
+
+  .heritage-form-btn:hover {
+    background: var(--heritage-text, #1a1a1a);
+    color: #fff;
+  }
+
+  /* --- Main Grid --- */
+  .heritage-main {
+    background: var(--heritage-bg, #fdfbf7);
+  }
+
+  .heritage-main-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 40px;
+  }
+
+  .heritage-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 50px;
+  }
+
+  /* Store Info Column */
+  .heritage-col-store {
+    padding-right: 40px;
+    border-right: 1px solid #eaeaea;
+  }
+
+  .heritage-col-heading {
+    font-family: var(--heritage-heading-font, 'Oswald', sans-serif);
+    font-size: var(--heritage-nav-heading-size, 15px);
+    letter-spacing: 1px;
+    margin: 0 0 20px;
+    color: var(--heritage-nav-heading-color, #222);
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .heritage-map {
+    margin-bottom: 20px;
+    border: 1px solid #eaeaea;
+    overflow: hidden;
+  }
+
+  .heritage-map iframe {
+    display: block;
+  }
+
+  .heritage-store-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #111;
+    margin: 0 0 5px;
+  }
+
+  .heritage-contact p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 0 8px;
+    line-height: 1.5;
+  }
+
+  .heritage-contact-line {
+    margin-top: 10px !important;
+  }
+
+  .heritage-contact a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .heritage-contact a:hover {
+    color: var(--heritage-accent, #d48b1c);
+  }
+
+  .heritage-contact strong {
+    color: #222;
+    font-weight: 600;
+  }
+
+  .heritage-hours {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.8;
+  }
+
+  .heritage-hours strong {
+    color: #333;
+  }
+
+  /* Nav Columns */
+  .heritage-nav-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .heritage-nav-col li {
+    margin-bottom: 12px;
+  }
+
+  .heritage-nav-col a {
+    color: var(--heritage-nav-link-color, #555);
+    text-decoration: none;
+    font-size: var(--heritage-nav-link-size, 14px);
+    transition: color 0.2s;
+  }
+
+  .heritage-nav-col a:hover {
+    color: var(--heritage-accent, #d48b1c);
+    text-decoration: underline;
+  }
+
+  .heritage-accordion-icon {
+    display: none;
+    transition: transform 0.3s ease;
+  }
+
+  /* --- Bottom Bar --- */
+  .heritage-bottom {
+    background: var(--heritage-bottom-bg, #2a2a2a);
+    color: var(--heritage-bottom-text, #ccc);
+  }
+
+  .heritage-bottom-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+  }
+
+  .heritage-copyright {
+    font-size: 0.75rem;
+    color: #aaa;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .heritage-socials {
+    display: flex;
+    gap: 20px;
+  }
+
+  .heritage-socials a {
+    color: #ccc;
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+  }
+
+  .heritage-socials a:hover {
+    color: #fff;
+  }
+
+  /* =========================================
+     Mobile Responsive
+     ========================================= */
+  @media (max-width: 900px) {
+    .heritage-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .heritage-top-inner {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 20px;
+      gap: 30px;
+    }
+
+    .heritage-newsletter {
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .heritage-form {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .heritage-main-inner {
+      padding: 50px 20px;
+    }
+
+    .heritage-grid {
+      grid-template-columns: 1fr;
+      gap: 0;
+      text-align: center;
+    }
+
+    .heritage-col-store {
+      padding-right: 0;
+      border-right: none;
+      border-bottom: 1px solid #eaeaea;
+      padding-bottom: 30px;
+      margin-bottom: 10px;
+    }
+
+    /* Accordion behavior on mobile */
+    .heritage-accordion-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      margin-bottom: 0;
+      border-bottom: 1px solid #eaeaea;
+      padding-bottom: 15px;
+      padding-top: 15px;
+    }
+
+    .heritage-accordion-icon {
+      display: block;
+    }
+
+    .heritage-nav-col ul {
+      display: none;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      text-align: left;
+    }
+
+    .heritage-nav-col.expanded ul {
+      display: block;
+    }
+
+    .heritage-nav-col.expanded .heritage-accordion-icon {
+      transform: rotate(180deg);
+    }
+
+    .heritage-bottom-inner {
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .heritage-socials {
+      justify-content: center;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Heritage Footer",
+  "tag": "section",
+  "class": "heritage-footer-section",
+  "enabled_on": {
+    "groups": ["footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "#fdfbf7"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#555555"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent color (hover)",
+      "default": "#d48b1c"
+    },
+    {
+      "type": "color",
+      "id": "bottom_bar_bg",
+      "label": "Bottom bar background",
+      "default": "#2a2a2a"
+    },
+    {
+      "type": "color",
+      "id": "bottom_bar_text",
+      "label": "Bottom bar text color",
+      "default": "#cccccc"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "select",
+      "id": "heading_font",
+      "label": "Heading font family",
+      "options": [
+        { "value": "'Oswald', sans-serif", "label": "Oswald" },
+        { "value": "'Playfair Display', serif", "label": "Playfair Display" },
+        { "value": "'Roboto', sans-serif", "label": "Roboto" },
+        { "value": "var(--font-heading--family)", "label": "Theme heading font" },
+        { "value": "var(--font-body--family)", "label": "Theme body font" }
+      ],
+      "default": "'Oswald', sans-serif"
+    },
+    {
+      "type": "select",
+      "id": "body_font",
+      "label": "Body font family",
+      "options": [
+        { "value": "'Roboto', sans-serif", "label": "Roboto" },
+        { "value": "'Playfair Display', serif", "label": "Playfair Display" },
+        { "value": "'Oswald', sans-serif", "label": "Oswald" },
+        { "value": "var(--font-heading--family)", "label": "Theme heading font" },
+        { "value": "var(--font-body--family)", "label": "Theme body font" }
+      ],
+      "default": "'Roboto', sans-serif"
+    },
+    {
+      "type": "range",
+      "id": "base_font_size",
+      "label": "Base font size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Footer logo"
+    },
+    {
+      "type": "header",
+      "content": "Newsletter"
+    },
+    {
+      "type": "text",
+      "id": "newsletter_heading",
+      "label": "Newsletter heading",
+      "default": "The TSG Dispatch"
+    },
+    {
+      "type": "text",
+      "id": "newsletter_subheading",
+      "label": "Newsletter subheading",
+      "default": "Stories, gear, and field notes sent straight to your inbox."
+    },
+    {
+      "type": "range",
+      "id": "newsletter_heading_size",
+      "label": "Newsletter heading size",
+      "min": 18,
+      "max": 42,
+      "step": 1,
+      "unit": "px",
+      "default": 28
+    },
+    {
+      "type": "text",
+      "id": "email_placeholder",
+      "label": "Email placeholder text",
+      "default": "Email Address"
+    },
+    {
+      "type": "text",
+      "id": "subscribe_button_text",
+      "label": "Subscribe button text",
+      "default": "SUBSCRIBE"
+    },
+    {
+      "type": "text",
+      "id": "klaviyo_list_id",
+      "label": "Klaviyo list ID",
+      "info": "Find this in Klaviyo under Lists & Segments. Leave blank to disable form submission."
+    },
+    {
+      "type": "header",
+      "content": "Store Information"
+    },
+    {
+      "type": "text",
+      "id": "store_heading",
+      "label": "Store column heading",
+      "default": "BRICK & MORTAR"
+    },
+    {
+      "type": "text",
+      "id": "store_name",
+      "label": "Store name / location",
+      "default": "COLONY SHOPPING CENTER"
+    },
+    {
+      "type": "html",
+      "id": "store_address",
+      "label": "Store address (HTML allowed)",
+      "default": "2848 SELWYN AVE<br>CHARLOTTE NC 28209"
+    },
+    {
+      "type": "text",
+      "id": "store_phone",
+      "label": "Phone number",
+      "default": "(704) 896.5600"
+    },
+    {
+      "type": "text",
+      "id": "store_email",
+      "label": "Email address",
+      "default": "outfitter@thesportinggent.com"
+    },
+    {
+      "type": "text",
+      "id": "map_embed_url",
+      "label": "Google Maps embed URL",
+      "info": "Paste the embed URL from Google Maps (the src value from an iframe embed code).",
+      "default": "https://maps.google.com/maps?q=2848%20Selwyn%20Ave%2C%20Charlotte%2C%20NC%2028209&t=&z=15&ie=UTF8&iwloc=&output=embed"
+    },
+    {
+      "type": "html",
+      "id": "store_hours",
+      "label": "Store hours (HTML allowed)",
+      "default": "<p><strong>MONDAY - FRIDAY:</strong> 10AM - 6PM</p><p><strong>SATURDAY:</strong> 10AM - 4PM</p><p><strong>SUNDAY:</strong> CLOSED</p>"
+    },
+    {
+      "type": "header",
+      "content": "Navigation Column 1"
+    },
+    {
+      "type": "text",
+      "id": "menu_1_heading",
+      "label": "Column heading",
+      "default": "THE GENTRY"
+    },
+    {
+      "type": "link_list",
+      "id": "menu_1",
+      "label": "Menu",
+      "info": "Select a menu from Navigation settings. Falls back to placeholder links."
+    },
+    {
+      "type": "header",
+      "content": "Navigation Column 2"
+    },
+    {
+      "type": "text",
+      "id": "menu_2_heading",
+      "label": "Column heading",
+      "default": "CUSTOMER SERVICE"
+    },
+    {
+      "type": "link_list",
+      "id": "menu_2",
+      "label": "Menu",
+      "info": "Select a menu from Navigation settings. Falls back to placeholder links."
+    },
+    {
+      "type": "header",
+      "content": "Navigation Column 3"
+    },
+    {
+      "type": "text",
+      "id": "menu_3_heading",
+      "label": "Column heading",
+      "default": "YOUR ACCOUNT"
+    },
+    {
+      "type": "link_list",
+      "id": "menu_3",
+      "label": "Menu",
+      "info": "Select a menu from Navigation settings. Falls back to placeholder links."
+    },
+    {
+      "type": "header",
+      "content": "Nav Column Styling"
+    },
+    {
+      "type": "range",
+      "id": "nav_heading_size",
+      "label": "Column heading size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "color",
+      "id": "nav_heading_color",
+      "label": "Column heading color",
+      "default": "#222222"
+    },
+    {
+      "type": "range",
+      "id": "nav_link_size",
+      "label": "Link text size",
+      "min": 11,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "nav_link_color",
+      "label": "Link text color",
+      "default": "#555555"
+    },
+    {
+      "type": "header",
+      "content": "Social Links"
+    },
+    {
+      "type": "url",
+      "id": "social_facebook",
+      "label": "Facebook URL"
+    },
+    {
+      "type": "url",
+      "id": "social_instagram",
+      "label": "Instagram URL"
+    },
+    {
+      "type": "url",
+      "id": "social_twitter",
+      "label": "Twitter / X URL"
+    },
+    {
+      "type": "header",
+      "content": "Copyright"
+    },
+    {
+      "type": "text",
+      "id": "copyright_text",
+      "label": "Copyright text",
+      "default": "© 2026 THE SPORTING GENT."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Heritage Footer",
+      "category": "Footer"
+    }
+  ]
+}
+{% endschema %}
